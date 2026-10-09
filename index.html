@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Poppins'] m-0 min-h-screen flex justify-center items-center bg-gray-100">
+    <div id="container" class="w-[350px] p-6 bg-white rounded-xl shadow-lg">
+          <h2 class="font-bold text-2xl text-center mb-5">Registration Form</h2>
+        <form id="Registrationform">
+         <!-- Name -->
+          <div class="mb-4">
+            <label class="block mb-1 font-bold">Name</label>
+            <input type="text" id="name" placeholder="Enter your Name" class="border border-gray-400 w-full p-2.5 rounded-md outline-none focus:border-gray-800">
+            <span id="nameError" class="block text-red-500 text-xs mt-1"></span>
+          </div>
+          <!-- Email -->
+          <div class="mb-4">
+            <label class="block mb-1 font-bold">Email</label>
+            <input type="text" id="email" placeholder="Enter your Email" class="border border-gray-400 w-full p-2.5 rounded-md outline-none focus:border-gray-800">
+            <span id="emailError" class="block text-red-500 text-xs mt-1"></span>
+          </div>
+          <!-- Password -->
+          <div class="mb-4">
+            <label class="block mb-1 font-bold">Password</label>
+            <input type="password" id="password" placeholder="Enter your Password" class="border border-gray-400 w-full p-2.5 rounded-md outline-none focus:border-gray-800">
+            <span id="passwordError" class="block text-red-500 text-xs mt-1"></span>
+          </div>
+          <!-- submit -->
+            <button type="submit" id="submitbtn" disabled class="w-full p-2.5 bg-gray-800 text-white rounded-md cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed">submit</button>
+            <!-- Successfull Message -->
+             <p id="Successfull" class="text-green-500 text-center mt-4 font-bold"></p>
+        </form>
+    </div>
+</body>
+</html>
